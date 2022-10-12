@@ -5,14 +5,13 @@ import Image from 'next/image'
 const SearchPage = () => {
   const [gifs, setGifs] = useState({} as SearchResult)
 
-  const fetchGifs = async () => {
-    const testsearch = 'cars'
-    const gifRes = await fetch(`/api/searchgifs/${testsearch}`).then((resp) => resp.json())
+  const fetchGifs = async (searchTerm: string) => {
+    const gifRes = await fetch(`/api/searchgifs/${searchTerm}`).then((resp) => resp.json())
     setGifs(gifRes.data)
   }
 
   useEffect(() => {
-    fetchGifs()
+    fetchGifs('cars')
   }, [])
 
   return (
