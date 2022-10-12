@@ -1,8 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app'
+import Head from "next/head";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({Component, pageProps}: AppProps) {
+  return (
+    <>
+      <Head>
+        <title>UI/UX Training</title>
+        <meta name="description" content="Frontend Training for CACIB"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Component {...pageProps} />;
+    </>
+  )
 }
 
 export default MyApp
