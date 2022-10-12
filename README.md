@@ -1,6 +1,6 @@
 # UI/UX Training Project
 
-This code was created as a base for providing training and practicing with bootstrap and for other UI frameworks
+This is a NextJS app created for providing training and practicing UI frameworks. Bootstrap has been added to start with.
 
 Basic APIs with GIPHY have been set up to have some data to play with
 
@@ -11,6 +11,14 @@ Install all the required packages with yarn
 ```bash
 yarn
 ```
+
+Create a dev account at [Giphy](https://developers.giphy.com/)
+
+Create an app in the Giphy dashboard and get an API key
+
+Create a file locally called ``.env.local``
+
+Copy the contents of ``.env`` to ``.env.local``, and paste your API key to the ``API_KEY`` variable
 
 Then run the development server:
 
