@@ -28,3 +28,5 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+# Stackblitz
+Code and play with this project online in [stackblitz](https://stackblitz.com/edit/nextjs-pn8mux)!
